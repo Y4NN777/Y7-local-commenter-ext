@@ -1,6 +1,7 @@
 import * as vscode from 'vscode';
 import { buildPrompt } from './promptBuilder';
 import { generateComment } from './ollama';
+import { getCurrentLine, addCommentToFile } from './manageEditor';
 
 export function activate(context: vscode.ExtensionContext) {
 
@@ -32,7 +33,14 @@ export function activate(context: vscode.ExtensionContext) {
 			vscode.window.showErrorMessage('Failed to generate comment');
 			return;
 		}
+
+		const fileURI = editor.document.uri;
+		const fileName = editor.document.fileName;
+		const currentLine = getCurrentLine(editor);
+
+		addCommentToFile(fileURI, fileName, currentLine, comment);
 	});
+
 
 	context.subscriptions.push(generateCommentCommand);
 }
