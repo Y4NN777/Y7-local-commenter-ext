@@ -1,5 +1,6 @@
 import * as vscode from 'vscode';
 import { buildPrompt } from './promptBuilder';
+import { generateComment } from './ollama';
 
 export function activate(context: vscode.ExtensionContext) {
 
@@ -20,6 +21,15 @@ export function activate(context: vscode.ExtensionContext) {
 
 		if (prompt === undefined ) {
 			vscode.window.showErrorMessage('Failed to generate prompt');
+			return;
+		}
+
+
+		const comment = await generateComment(prompt);
+		console.log('generated comment: ', comment);
+
+		if (comment === undefined){
+			vscode.window.showErrorMessage('Failed to generate comment');
 			return;
 		}
 	});
