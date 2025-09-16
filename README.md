@@ -28,12 +28,13 @@ In an era where cloud-based AI tools are everywhere, some projects demand **100%
 - **Confidential projects** where code cannot leave premises  
 - **Privacy-conscious developers** who want control over their data
 - **Air-gapped environments** where external APIs aren't accessible
+- **Passionate coders** who enjoy writing code themselves and want to maintain that hands-on approach while automating documentation
 
 This extension bridges that gap - giving you AI-powered documentation while keeping everything local.
 
 **Why This Matters:** In sensitive projects where 70% of the code is written by developers themselves (not AI-generated), automated commenting becomes essential for maintaining documentation quality without compromising the human-crafted codebase integrity.
 
-**Personal Context:** This extension was built for my own needs first, but I believe it can be helpful for at least a few other developers out there. Being based in Burkina Faso, Africa, I often face power cuts and unreliable internet connectivity - situations where local AI becomes invaluable for maintaining productivity. You can still code and document even when the internet is down.
+**Personal Context:** This extension was built for my own needs first, but I believe it can be helpful for at least a few other developers out there - whether for privacy reasons, infrastructure challenges, or simply for those who enjoy coding by passion and want to maintain that personal touch in their development process. Being based in Burkina Faso, Africa, I often face power cuts and unreliable internet connectivity - situations where local AI becomes invaluable for maintaining productivity. You can still code and document even when the internet is down.
 
 > **Note:** This is a personal project that doesn't aim to diss anyone or replace existing solutions. If you don't find it useful, feel free to pass and ignore it. However, if you find it worth using, I'd appreciate a star on the repository - it helps me know the tool is serving its purpose for fellow developers.
 
@@ -209,8 +210,8 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 <div align="center">
 
-**Built with privacy and care by developers, for developers**
+**Built with privacy in mind and care by a developer, for developers**
 
-*Keep your sensitive and self-written code local, keep your privacy intact*
+*Keep your code local, keep your privacy intact*
 
 </div>
