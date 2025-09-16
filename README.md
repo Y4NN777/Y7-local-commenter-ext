@@ -73,7 +73,7 @@ This extension bridges that gap - giving you AI-powered documentation while keep
 
 ### Required Software
 - **[Ollama](https://ollama.ai)** - Local AI model runner
-- **VS Code** - Version 1.60.0 or higher
+- **VS Code** - Version 1.104.0 or higher
 
 ### Setup Steps
 
@@ -101,8 +101,9 @@ This extension bridges that gap - giving you AI-powered documentation while keep
    ```
 
 4. **Install Extension**
-   - Download from VS Code Marketplace
-   - Or install manually from `.vsix` file
+   - **Method 1:** Download the `.vsix` file from [GitHub Releases](https://github.com/Y4NN777/Y7-local-commenter-ext/releases)
+   - **Method 2:** Install via command line: `code --install-extension y7-local-commenter-0.0.1.vsix`
+   - **Method 3:** Install via VS Code GUI: Extensions panel → `...` menu → "Install from VSIX" → Select downloaded file
 
 ---
 
@@ -179,10 +180,25 @@ F5 # Opens Extension Development Host
 
 Contributions are welcome! This project is built for the community of privacy-conscious developers.
 
-- **Bug reports** - Open an issue with details
-- **Feature requests** - Suggest improvements  
+- **Bug reports** - [Open an issue](https://github.com/Y4NN777/Y7-local-commenter-ext/issues) with details
+- **Feature requests** - [Suggest improvements](https://github.com/Y4NN777/Y7-local-commenter-ext/issues/new)
 - **Pull requests** - Submit your enhancements
 - **Documentation** - Help improve docs
+
+### Development Setup
+```bash
+# Clone the repository
+git clone https://github.com/Y4NN777/Y7-local-commenter-ext
+
+# Install dependencies
+npm install
+
+# Compile TypeScript
+npm run compile
+
+# Run extension in development mode
+F5 # Opens Extension Development Host
+```
 
 ---
 
@@ -203,14 +219,14 @@ MIT License - see [LICENSE](LICENSE) file for details.
 ## Support
 
 - **Issues:** [GitHub Issues](https://github.com/Y4NN777/Y7-local-commenter-ext/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/Y4NN777/Y7-local-commenter-ext/discussions)
-- **Docs:** Check this README or code comments
+- **Feature Requests:** [New Issue](https://github.com/Y4NN777/Y7-local-commenter-ext/issues/new)
+- **Documentation:** Check this README or code comments
 
 ---
 
 <div align="center">
 
-**Built with privacy in mind and care by a developer, for developers**
+**Built with privacy and care by developers, for developers**
 
 *Keep your code local, keep your privacy intact*
 
