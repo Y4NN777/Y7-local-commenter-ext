@@ -1,13 +1,38 @@
 {
   "name": "y7-local-commenter",
-  "displayName": "Y7-local-commenter",
-  "description": "",
+  "displayName": "Y7 Local Commenter",
+  "description": "Generate intelligent code comments using local Ollama AI. Privacy-first documentation tool for developers who value control over their code and data.",
   "version": "0.0.1",
+  "publisher": "Y4NN777",
+  "author": {
+    "name": "Y4NN777"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Y4NN777/Y7-local-commenter-ext.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Y4NN777/Y7-local-commenter-ext/issues"
+  },
+  "homepage": "https://github.com/Y4NN777/Y7-local-commenter-ext#readme",
+  "keywords": [
+    "comments",
+    "documentation",
+    "ai",
+    "local",
+    "ollama",
+    "privacy",
+    "code-comments",
+    "offline"
+  ],
   "engines": {
     "vscode": "^1.104.0"
   },
   "categories": [
-    "Other"
+    "Other",
+    "Machine Learning",
+    "Snippets"
   ],
   "activationEvents": [],
   "main": "./out/extension.js",
@@ -15,7 +40,8 @@
     "commands": [
       {
         "command": "y7-local-commenter.generateComment",
-        "title": "Generate Block Comment"
+        "title": "Generate Block Comment",
+        "category": "Y7 Local Commenter"
       }
     ]
   },
