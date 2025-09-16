@@ -12,5 +12,5 @@ export async function addCommentToFile(fileURI: vscode.Uri, fileName: string, li
     const edit = new vscode.WorkspaceEdit();
     edit.insert(fileURI, new vscode.Position(line, 0), generatedComment.trim());
     await vscode.workspace.applyEdit(edit);
-    vscode.window.showInformationMessage(`Commented added to ${fileName} at line ${line +1}`);
+    vscode.window.showInformationMessage(`Comment added to ${fileName} at line ${line +1}`);
 }

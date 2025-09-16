@@ -8,7 +8,7 @@ export function activate(context: vscode.ExtensionContext) {
 	console.log('Congratulations, your extension "y7-local-commenter" is now active!');
 
 	const generateCommentCommand = vscode.commands.registerCommand('y7-local-commenter.generateComment', async () => {
-		vscode.window.showInformationMessage('Generation code comment, please wait ... !');
+		vscode.window.showInformationMessage('Generating code block comment, please wait ... !');
 
 		const editor = vscode.window.activeTextEditor;
 
