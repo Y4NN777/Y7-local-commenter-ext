@@ -34,7 +34,6 @@ export async function buildPrompt(editor: vscode.TextEditor){
 
     let prompt = `
         complete code:
-        
         "
         {CONTEXT}
         "
@@ -48,12 +47,12 @@ export async function buildPrompt(editor: vscode.TextEditor){
         "
         `;
 
-        prompt = prompt
-            .replace('{CONTEXT}', codeContext)
-            .replace('{CODE-BLOCK}', codeBlock)
-            .replace('{COMMENT-SYNTAX}', commentSyntax);
+    prompt = prompt
+        .replace('{CONTEXT}', codeContext)
+        .replace('{CODE-BLOCK}', codeBlock)
+        .replace('{COMMENT-SYNTAX}', commentSyntax);
 
 
-        return prompt;
+    return prompt;
 }
     
