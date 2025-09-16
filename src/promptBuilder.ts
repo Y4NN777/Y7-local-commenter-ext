@@ -14,12 +14,29 @@ async function getCodeBlock(){
     return codeBlock;
 }
 
-function selectCommentSyntax(editor: vscode.TextEditor){
-    const fileExtension = editor.document.fileName.toLowerCase().split('.').at(-1);
-    const commentSyntax = fileExtension === 'js' ? '//' : '#';
-    return commentSyntax;
+function selectCommentSyntax(editor: vscode.TextEditor) {
+    const languageId = editor.document.languageId;
+    
+    const commentMap: { [key: string]: string } = {
+        'javascript': '//',
+        'typescript': '//',
+        'java': '//',
+        'c': '//',
+        'cpp': '//',
+        'csharp': '//',
+        'php': '//',
+        'python': '#',
+        'ruby': '#',
+        'shell': '#',
+        'yaml': '#',
+        'html': '<!-- -->',
+        'xml': '<!-- -->',
+        'css': '/* */',
+        'scss': '/* */',
+    };
+    
+    return commentMap[languageId] || '#';
 }
-
 
 export async function buildPrompt(editor: vscode.TextEditor){
     const codeBlock = await getCodeBlock();
